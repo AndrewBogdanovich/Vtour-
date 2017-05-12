@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Confirm Email";
+}
+ <!-- CSS  -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="~/Content/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+<link href="~/Content/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+<!-- JS  -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="~/Scripts/materialize.js"></script>
+<script src="~/Scripts/init.js"></script>
+<h2>@ViewBag.Title.</h2>
+<div>
+    <p>
+        Thank you for confirming your email. Please @Html.ActionLink("Click here to Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })
+    </p>
+</div>
